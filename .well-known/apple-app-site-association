@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["58A2LGXHBY.nz.seasonme.app"],
+        "components": [{ "/": "/r/*", "comment": "Shared recipes open in the SeasonMe app" }]
+      }
+    ]
+  }
+}

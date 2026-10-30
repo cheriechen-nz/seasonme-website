@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A recipe shared with SeasonMe</title>
+<meta name="description" content="Someone shared a recipe with you. Open it in the SeasonMe app.">
+<meta property="og:title" content="A recipe shared with SeasonMe">
+<meta property="og:description" content="Tap to open the recipe in SeasonMe – seasonal meal planning, made easy.">
+<meta property="og:image" content="https://www.seasonmeapp.com/images/icon-180.png">
+<meta name="robots" content="noindex">
+<link rel="icon" href="../images/favicon.png">
+<link rel="apple-touch-icon" href="../images/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<!-- With SeasonMe installed, iPhones open this link straight in the app. This page is for everyone else. -->
+<main class="article" style="text-align:center">
+  <img src="../images/icon-180.png" alt="" width="88" height="88" style="margin:24px auto 8px;border-radius:20px">
+  <h1>Someone shared a recipe with you</h1>
+  <p>Open it in the SeasonMe app to see the ingredients and method, and save it to your recipes.</p>
+  <p style="margin-top:24px"><a id="open" class="btn btn-primary" href="seasonme://r">Open in SeasonMe</a></p>
+  <p class="muted" style="margin-top:24px">Don’t have SeasonMe yet? It’s in testing on iPhone – ask the person who shared this recipe for an invite, or email <a href="mailto:info@seasonmeapp.com">info@seasonmeapp.com</a>.</p>
+  <p class="muted"><a href="../index.html">About SeasonMe</a></p>
+</main>
+<script>
+  // Carry the recipe's id into the app link.
+  var id = new URLSearchParams(location.search).get('id');
+  if (id && /^[0-9a-f-]{36}$/i.test(id)) document.getElementById('open').href = 'seasonme://r?id=' + id;
+</script>
+</body>
+</html>
