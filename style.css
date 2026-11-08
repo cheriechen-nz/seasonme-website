@@ -139,7 +139,9 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--mint); outline-of
 
 /* Why SeasonMe */
 .why-hero { padding: 64px 0 72px; }
-.why-hero h1 { font-size: clamp(40px, 6vw, 64px); margin: 12px 0 18px; }
+.why-hero h1 { font-size: clamp(40px, 6vw, 64px); margin: 12px 0 18px; text-wrap: balance; }
+.why-hero .section-head p, .why-teaser p { max-width: 32em; margin-left: auto; margin-right: auto; text-wrap: balance; }
+.why-teaser h2 { text-wrap: balance; }
 .mv { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 980px; margin: 0 auto; }
 .mv-card { background: var(--mint-soft); border-radius: 28px; padding: 32px; }
 .mv-card.peach { background: var(--peach-soft); }
