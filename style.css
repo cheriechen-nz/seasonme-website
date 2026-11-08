@@ -157,3 +157,6 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--mint); outline-of
 @media (max-width: 900px) {
   .mv, .beliefs { grid-template-columns: 1fr; }
 }
+.nowrap { white-space: nowrap; }
+.why-hero h1 .nowrap { display: block; }
+.why-teaser h2 { font-size: clamp(30px, 4vw, 44px); margin: 10px 0 0; }
