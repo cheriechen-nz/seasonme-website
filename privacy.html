@@ -42,29 +42,36 @@
 
   <h2>Sharing a recipe</h2>
   <p>When you share a recipe as a link, a copy of that recipe and its photo is saved so the person you send it to can open it in SeasonMe. Anyone who has the link can see that recipe, but shared recipes can’t be browsed or searched. Your name and email aren’t included.</p>
+  <p>When you share a meal plan or grocery list, or use <em>Send to my AI assistant</em>, SeasonMe hands the text to the app you pick on your iPhone (for example Messages, ChatGPT or Grok). SeasonMe doesn’t send it anywhere itself, and that app’s own privacy policy applies.</p>
+
+  <h2>Households</h2>
+  <p>If you start or join a household, the people in it share one meal plan and grocery list. Everyone in the household can see: the household’s name, each member’s display name (the name you choose when you join), the shared meal plan, grocery list and added items, and any of your own recipes that you put in the shared meal plan (with their photos, if they’re online). They can’t see your other recipes, your email address or your settings. The person who started the household can remove members and change the invite code; anyone with the code can ask to join until the household is full. When you leave or are removed, you keep your own copy of the plan; when the person who started the household leaves or deletes their account, the household closes for everyone.</p>
 
   <h2>AI features (SeasonMe Plus)</h2>
-  <p>Smart Import, cookbook import and Ask AI use artificial intelligence provided by Anthropic (the maker of Claude). When you use them, SeasonMe sends Anthropic only what’s needed for that request:</p>
+  <p>Smart Import, cookbook import, Ask AI, Snap a photo and smart swaps use artificial intelligence provided by Anthropic (the maker of Claude). When you use them, SeasonMe sends Anthropic only what’s needed for that request:</p>
   <ul>
     <li><strong>Smart Import:</strong> the link you paste, the text of that web page, the post’s caption and any captions of what’s said in the video, and any text you paste;</li>
     <li><strong>Cookbook import:</strong> the photos of the page you take or choose (shrunk first);</li>
-    <li><strong>Ask AI:</strong> your choices (meal, time, style and foods to use), your menu type, restrictions, household size, country and season, and the names of recipes you already have so the ideas are new.</li>
+    <li><strong>Ask AI:</strong> your choices (meal, time, style and the ingredients or dish you pick or type), your menu type, restrictions, household size, country and season, and the names of recipes you already have so the ideas are new;</li>
+    <li><strong>Snap a photo:</strong> the photos of your fridge, pantry or bench you take or choose (shrunk first). They’re used to list the food in them and aren’t stored;</li>
+    <li><strong>Smart swaps:</strong> the recipe’s name, ingredients and method, the ingredient you want to swap, your menu type, restrictions and the items in your kitchen list.</li>
   </ul>
   <p>Your name and email address aren’t sent. Anthropic processes this to return the result and, under its commercial terms, doesn’t use it to train its models. See <a href="https://www.anthropic.com/legal/privacy">Anthropic’s privacy policy</a>. We keep a count of how many AI requests you make each month so we can apply your plan’s allowance; we don’t keep the content of the requests.</p>
-  <p>Photos for Ask AI recipes are made by fal.ai from a short description of the dish (for example “Lemon chicken and asparagus”). Nothing about you is sent to fal.ai. The photos are stored by SeasonMe so your saved recipes keep them.</p>
+  <p>Photos for SeasonMe’s recipes (including Ask AI recipes) are real photos from Pixabay or Pexels when one matches the dish (shown with the photographer’s name), otherwise made by fal.ai. Only the dish’s name and a short description (for example “Lemon chicken and asparagus”) are sent to these services; nothing about you. The photos are stored by SeasonMe so your saved recipes keep them.</p>
+  <p><strong>SeasonMe’s recipe library.</strong> Ask AI first looks for suitable recipes in SeasonMe’s own library. New recipes that Ask AI writes, and their photos, are added to that library so other SeasonMe users can be offered them too. Only the recipe itself is kept: not your choices, restrictions, recipe names or anything else about you. Recipes you save, edit or add yourself stay private to you (and anyone you share them with).</p>
 
   <h2>Importing recipes from a link</h2>
   <p>For the standard (non-AI) import, SeasonMe downloads the page directly from your phone, the same way a web browser would, and reads the recipe from it. The website (for example a recipe blog, TikTok, Instagram, Pinterest or Facebook) receives a normal request from your phone and its own privacy policy applies. SeasonMe may follow a link from a post to the recipe page it mentions.</p>
   <p><strong>YouTube.</strong> To read a YouTube video’s title, description and photo, SeasonMe uses YouTube API Services: the video link is sent to YouTube (Google). By importing from YouTube you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google handles that request under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. SeasonMe doesn’t access your YouTube or Google account. On your phone, SeasonMe may also read the captions YouTube or TikTok shares for a video.</p>
 
   <h2>Subscriptions</h2>
-  <p>SeasonMe Plus is bought through Apple. Apple handles your payment and we never see your card or bank details. We receive from Apple whether your subscription or free trial is active and when it renews, so SeasonMe can unlock Plus features.</p>
+  <p>SeasonMe Plus is bought through Apple. Apple handles your payment and we never see your card or bank details. Your purchase is linked to your SeasonMe account by its account number (a random ID, not your name or email), and Apple tells us whether your subscription or free trial is active, when it renews, and if it’s cancelled or refunded, so SeasonMe can unlock Plus features.</p>
 
   <h2>Location (optional)</h2>
   <p>If you choose “Use my current location”, SeasonMe asks iOS for your approximate location once, to work out your country and season. iOS may use Apple’s services to turn the location into a place name. SeasonMe saves only the country and city, never your exact position. You can choose your country from a list instead.</p>
 
   <h2>Camera, photos and notifications</h2>
-  <p>SeasonMe asks for the camera or your photo library only when you choose to add a photo or photograph a cookbook page. Reminders are notifications scheduled on your phone.</p>
+  <p>SeasonMe asks for the camera or your photo library only when you choose to add a photo, photograph a cookbook page or snap your fridge. Reminders are notifications scheduled on your phone.</p>
 
   <h2>Feedback and Contact us</h2>
   <p>When you send feedback or a message from the app, we receive what you wrote, your email address if you give one, the SeasonMe version and, on Contact us, your iPhone model and iOS version unless you untick that option. If you aren’t signed in, the message is delivered through Formspree, a form service (see <a href="https://formspree.io/legal/privacy-policy/">Formspree’s privacy policy</a>). We use messages only to reply to you and to improve SeasonMe.</p>
@@ -73,8 +80,9 @@
   <p>We use these service providers, who handle information only to provide their service to us:</p>
   <ul>
     <li><strong>Supabase</strong> – our database, sign-in and file storage (<a href="https://supabase.com/privacy">privacy policy</a>);</li>
-    <li><strong>Anthropic</strong> – AI for Smart Import, cookbook import and Ask AI;</li>
-    <li><strong>fal.ai</strong> – AI food photos for Ask AI recipes;</li>
+    <li><strong>Anthropic</strong> – AI for Smart Import, cookbook import, Ask AI, Snap a photo and smart swaps;</li>
+    <li><strong>Pixabay and Pexels</strong> – real food photos for recipes;</li>
+    <li><strong>fal.ai</strong> – AI food photos for recipes;</li>
     <li><strong>Google (YouTube API Services)</strong> – YouTube video details;</li>
     <li><strong>Apple</strong> – Sign in with Apple, payments and subscriptions;</li>
     <li><strong>Google Workspace</strong> – our email, including sign-in codes;</li>
@@ -83,10 +91,10 @@
   <p>These providers may store or process information outside New Zealand, for example in Australia or the United States. We choose providers that protect information in a way comparable to New Zealand’s Privacy Act 2020.</p>
 
   <h2>How long we keep it</h2>
-  <p>We keep your account and backup for as long as you have a SeasonMe account. Shared recipe links stay available until you delete your account. Messages are deleted once they’re no longer needed.</p>
+  <p>We keep your account and backup for as long as you have a SeasonMe account. Shared recipe links stay available until you delete your account. A household’s shared plan is kept while the household exists. Recipes in SeasonMe’s library (including those Ask AI wrote) contain nothing about you and are kept. Messages are deleted once they’re no longer needed.</p>
 
   <h2>Deleting your account</h2>
-  <p>You can delete your account any time in <em>Settings › Account › Delete account</em>. This permanently deletes your account, backup, photos, shared recipe links and AI photos. Copies in our providers’ routine backups are removed within 30 days. Deleting your account doesn’t cancel a SeasonMe Plus subscription; cancel it in your iPhone’s <em>Settings › [your name] › Subscriptions</em>.</p>
+  <p>You can delete your account any time in <em>Settings › Account › Delete account</em>. This permanently deletes your account, backup, the photos you added, shared recipe links and your subscription records, and removes you from any household (if you started it, the household is closed). Copies in our providers’ routine backups are removed within 30 days. Deleting your account doesn’t cancel a SeasonMe Plus subscription; cancel it in your iPhone’s <em>Settings › [your name] › Subscriptions</em>.</p>
 
   <h2>Children</h2>
   <p>SeasonMe is for people aged 13 and over, and isn’t directed at children.</p>
